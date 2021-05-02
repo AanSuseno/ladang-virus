@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ladang virus</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script src="js.js"></script>
+</head>
+<body>
+
+	<!-- papan game -->
+	<div id="game"></div>
+
+	<!--  -->
+	<table id="kontroller">
+		<tr>
+			<td> </td>
+			<td> </td>
+			<td onclick="ke('atas')"><img src="img/kontroller.png" class="controller" style="transform: rotate(180deg);"></td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td onclick="ke('kiri')"><img src="img/kontroller.png" class="controller" style="transform: rotate(90deg);"></td>
+			<td> </td>
+			<td onclick="ke('kanan')"><img src="img/kontroller.png" class="controller" style="transform: rotate(-90deg);"></td>
+		</tr>
+		<tr>
+			<td onclick="berhenti()"><img src="img/berhenti.png" class="controller"></td>
+			<td> </td>
+			<td onclick="ke('bawah')"><img src="img/kontroller.png" class="controller"></td>
+			<td> </td>
+		</tr>
+	</table>
+
+	<!-- tampilan ketika pertama dibuka -->
+	<div id="halamanAwal">
+		<center>
+			<table>
+				<tr>
+					<td colspan="2" align="center" id="pesan"></td>
+				</tr>
+				<tr>
+					<td>LEVEL</td>
+					<td id="tingkatan">: MUDAH</td>
+				</tr>
+				<tr>
+					<td>MISI</td>
+					<td id="target">: 5</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">++++++++</td>
+				</tr>
+				<tr>
+					<td colspan="2"><button onclick="mulai()" style="width: 100%">MULAI</button></td>
+				</tr>
+			</table>
+		</center>		
+	</div>
+</body>
+</html>

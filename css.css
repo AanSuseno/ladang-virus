@@ -1,0 +1,102 @@
+@font-face {
+	font-family: "dogica";
+	src: url("dogica.ttf");
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "dogica";
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background-color: #222;
+	display: flex;
+	justify-content: center;
+}
+
+#game {
+	height: 100vmin;
+	width: 100vmin;
+	position: absolute;
+	overflow: hidden;
+	background-image: url("img/tanah.png");
+	background-repeat: repeat;
+}
+
+#kontroller {
+	color: #fff;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+#char, .virus, #diamond, #kotakSehat {
+	width: 10vmin;
+	position: absolute;
+}
+
+#diamond, #kotakSehat {
+	width: 5vmin
+}
+
+#nyawaMeter {
+	height: 1vmin;
+	width: 100vmin;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: yellow;
+}
+
+.controller {
+	width: 30px;
+	opacity: 0.5;
+}
+
+.controller:active {
+	opacity: 1;
+}
+
+#halamanAwal {
+	background-image: url("img/tanah.png");
+	height: 100vh;
+	width: 100vw;
+	z-index: 1;
+	overflow: auto;
+}
+
+#halamanAwal table {
+	position: relative;
+	top: 100px;
+	width: 300px;
+	line-height: 25px;
+	background: linear-gradient(to left top, #CBCBCB, #D5D5D5);
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 7px 5px rgba(0,0,0,0.5);
+}
+
+#halamanAwal button {
+	line-height: 40px;
+	border-radius: 20px;
+	background-color: #E9E9E9;
+	border: none;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+#skor {
+	color: #000;
+	font-size: 2vmin;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #fff;
+	padding: 2px;
+}
+
+#skorGambar {
+	height: 2vmin;
+}
