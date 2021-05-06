@@ -10,3 +10,6 @@ Game sudah bisa dikatakan selesai.
 
 ### 002
 Ubah ukuran controller menjadi lebih besar.
+
+### 003
+Ubah ukuran controller lebih responsive
